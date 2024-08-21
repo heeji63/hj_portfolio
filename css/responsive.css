@@ -128,7 +128,7 @@
 @media screen and (max-width:550px){
     .section .tit{font-size: 1.8em;}
     .section.section02 .introduce_ul:not(:first-child){display: block; margin-top: 50px;}
-    .section.section02 .introduce_ul:not(:first-child) li:last-child{width:100%;margin-top: 50px;}
+    .section.section02 .introduce_ul:not(:first-child) li{width:100%;margin-top: 50px;}
     .section.section02 .about_ul > li .introduce_txt{font-size: 1.1em;text-align: left;}
     .section.section04 .work_wrap .work_others .work_others_ul li p{font-size: 15px;}
     footer .copyright{font-size: 1em;}
@@ -179,7 +179,7 @@
 }
 @media screen and (max-width:300px){
     .section.section02 .introduce_ul{display: block;}
-    .section.section02 .introduce_ul li:last-child{width:100%;margin-top: 50px;}
+    .section.section02 .introduce_ul li{width:100%;margin-top: 50px;}
     footer .copyright{font-size: 0.8em;}
     /* work */
     main.work .w_title h2{font-size: 24px;}
