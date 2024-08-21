@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="title" content="Heeji's portfolio">
+    <meta property="og:image" content="/img/logo.png">
+    <meta property="og:url" content="">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HeeJi's Portfolio</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDhN1evjS1pSw2C-s7LioDZSalfyLy8orA",
+        authDomain: "hj-portfolio-5f138.firebaseapp.com",
+        projectId: "hj-portfolio-5f138",
+        storageBucket: "hj-portfolio-5f138.appspot.com",
+        messagingSenderId: "1023955388473",
+        appId: "1:1023955388473:web:82c311c41d3b896ba925e8",
+        measurementId: "G-BPH1PQE3G7"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="inner">
+        <h1 id="logo"><a href="./index.html">NAM HEEJI LOGO</a></h1>
+        <nav class="gnb">
+          <ul class="gnb_ul">
+            <li><span>about</span></li>
+            <li><span>skill</span></li>
+            <li><span>work</span></li>
+            <li><span>contact</span></li>
+          </ul>
+        </nav>
+        <button type="button" class="menu_m">
+          <span class="line"></span>
+          <span class="line short"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+    </header>
+    <div class="menu_m_box">
+      <div class="inner">
+        <ul class="menu_m_ul">
+          <li><span>about <em>→</em></span></li>
+          <li><span>skill <em>→</em></span></li>
+          <li><span>work <em>→</em></span></li>
+          <li><span>contact <em>→</em></span></li>
+        </ul>
+      </div>
+    </div>
+    <button type="button" name="button" id="btn_top">top btn</button>
+    <div class="cursor"></div>
+    <div class="popupWrap">
+      <div class="popup">
+        <div class="popup_head"><button type="button" class="popup_close">close</button></div>
+        <ul class="hj_popup_cont hj_hello">
+          <li><img src="./img/popup_hj_01.png" alt=""></li>
+          <li>
+            <p>
+              안녕하세요 남희지입니다. 반갑습니다!😎<br />
+              제 포트폴리오 사이트에 와 주셔서 감사합니다😁<br /><br />
+              경력 5년의 퍼블리셔입니다😙<br /><br />
+              이 사이트를 비롯한 work에 있는 사이트 모두
+              열심히 작업한 결과물이니 관심있게 봐 주세요🤗
+            </p>
+            <span class="anchor">about <em>→</em></span>
+          </li>
+        </ul>
+        <ul class="hj_popup_cont hj_welcom">
+          <li><img src="./img/popup_hj_02.png" alt=""></li>
+          <li>
+            <p>
+              제 포트폴리오 홈페이지에 오신 것을 환영합니다😘<br /><br />
+              포트폴리오 사이트는 제가 혼자 디자인 및 퍼블을
+              진행하였습니다.<br />
+              아이폰 미모티콘을 제외한 이미지 또한
+              직접 제작하였습니다.<br /><br />
+              흥미롭게 봐 주시면 감사하겠습니다~!
+            </p>
+            <span class="anchor">skill <em>→</em></span>
+          </li>
+        </ul>
+        <ul class="hj_popup_cont hj_go">
+          <li><img src="./img/popup_hj_03.png" alt=""></li>
+          <li>
+            <p>
+              좋은 곳에서 좋은 사람들과 함께
+              소통하며 즐겁게 일하기를 희망하고 있습니다🍀<br /><br />
+              우리가 인연이길 바랍니다😉<br /><br />
+              오늘도 좋은 하루 되세요✨
+            </p>
+            <span class="anchor">contact <em>→</em></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <div class="inner">
+        <section class="section section01">
+          <div class="inner">
+            <div class="main_txt_wrap">
+              <span class="typed"></span>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="section section02">
+          <div class="inner">
+            <h3 class="tit">Are you curious <span>about</span> me?</h3>
+            <ul class="about_ul">
+              <li>
+                <img src="./img/me_video.gif" alt="">
+              </li>
+              <li>
+                <ul class="introduce_ul">
+                  <li>
+                    <h4>Name</h4>
+                    <p>남희지, HeeJi Nam</p>
+                  </li>
+                  <li>
+                    <h4>Birth</h4>
+                    <p>June 3rd, 1999</p>
+                  </li>
+                </ul>
+                <ul class="introduce_ul">
+                  <li>
+                    <h4>Experience</h4>
+                    <p>
+                      서울문화고등학교 졸업<br />
+                      : 문화 콘텐츠 디자인과
+                      <br /><br />
+                      MBC아카데미직업전문학교 수료<br />
+                      : 디지털 UX/UI 과정
+                    </p>
+                  </li>
+                  <li>
+                    <h4>License</h4>
+                    <p>
+                      웹디자인기능사자격증<br />
+                      GTQ 포토샵 1급<br />
+                      컴퓨터그래픽스운용기능사<br />
+                      ITQ 엑셀<br />
+                      ITQ 아래한글
+                    </p>
+                  </li>
+                  <li>
+                    <h4>Notion</h4>
+                    <p>https://olive-night-24d.notion.site/9f3b642710c34e7c8f6fa7bdb69c9b33</p>
+                  </li>
+                </ul>
+                <p class="introduce_txt">
+                  안녕하세요, <span>퍼블리셔 남희지</span>입니다.<br />
+                  퍼플리셔의 중요한 역할 중 하나가 <span>소통</span>이라고 생각합니다.
+                  <br /><br />
+                  기획과 디자이너, 그리고 개발자의 사이에서 <span>균형</span>을 잡고<br />
+                  멋진 결과물을 완성하도록 노력하겠습니다😊
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="skill" class="section section03">
+          <div class="inner">
+            <h3 class="tit">Check out my <span>skills</span></h3>
+            <div class="skill_gauge">
+              <ul class="skill_gauge_ul">
+                <li>
+                  <h4>html</h4>
+                  <div class="gauge_wrap"><span class="gauge_color html"></span></div>
+                </li>
+                <li>
+                  <h4>css</h4>
+                  <div class="gauge_wrap"><span class="gauge_color css"></span></div>
+                </li>
+                <li>
+                  <h4>javascript/jquery</h4>
+                  <div class="gauge_wrap"><span class="gauge_color js"></span></div>
+                </li>
+                <li>
+                  <h4>photoshop</h4>
+                  <div class="gauge_wrap"><span class="gauge_color ps"></span></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="work" class="section section04">
+          <div class="inner">
+            <h3 class="tit">Look at my <span>work</span></h3>
+            <div class="work_wrap">
+              <ul class="work_list">
+                <li><span onclick="window.open('./work_shinsung.html')"><img src="./img/icon_shinsung.png" alt="신성전자정밀"></span></li>
+                <li class="point hel"><span><img src="./img/icon_hj_01.png" alt="point hello"></span></li>
+                <li><span onclick="window.open('./work_dream.html')"><img src="./img/icon_dream.png" alt="드림필드코리아"></span></li>
+                <li><span onclick="window.open('./work_kimeye60.html')"><img src="./img/icon_kimeye.png" alt="김안과병원60주년"></span></li>
+                <li><span onclick="window.open('./work_intoinworld.html')"><img src="./img/icon_intoin.png" alt="인투인월드"></span></li>
+                <li><span onclick="window.open('./work_dmgec.html')"><img src="./img/icon_daemyeng.png" alt="대명GEC"></span></li>
+                <li class="point wel"><span><img src="./img/icon_hj_02.png" alt="point welcom"></span></li>
+                <li><span onclick="window.open('./work_insadong.html')"><img src="./img/icon_insadong.png" alt="인사동"></span></li>
+                <li><span onclick="window.open('./work_hangang.html')"><img src="./img/icon_hangang.png" alt="한강조각프로젝트"></span></li>
+                <li><span onclick="window.open('./work_bestian.html')"><img src="./img/icon_bestian.png" alt="베스티안임상시험센터"></span></li>
+                <li><span onclick="window.open('./work_optimal.html')"><img src="./img/icon_optimal.png" alt="옵티멀에너지서비스"></span></li>
+                <li><span onclick="window.open('./work_admkorea.html')"><img src="./img/icon_admkorea.png" alt="ADM KOREA"></span></li>
+                <li><span onclick="window.open('./work_webs.html')"><img src="./img/icon_webs.png" alt="웹스시스템코리아"></span></li>
+                <li><span onclick="window.open('./work_saesol.html')"><img src="./img/icon_saesol.png" alt="새솔다이아몬드"></span></li>
+                <li class="point let"><span><img src="./img/icon_hj_03.png" alt="point let's go"></span></li>
+                <li><span onclick="window.open('./work_shinhwa.html')"><img src="./img/icon_shinhwa.png" alt="신화다이나믹스"></span></li>
+                <li><span onclick="window.open('./work_bluit.html')"><img src="./img/icon_bluit.png" alt="blu-it"></span></li>
+              </ul>
+              <div class="work_others">
+                <ul class="work_others_ul">
+                  <li><img src="./img/me_others.png" alt="others memoticon"></li>
+                  <li>
+                    <h3 class="tit">others</h3>
+                    <p>
+                      <span>김안과병원/유지보수</span> <span>한국화학물질협회/유지보수(+반응형 작업)</span> <span>삼양식품/유지보수(+신규 페이지 제작)</span>
+                      <span>CJ씨푸드/유지보수(+신규 페이지 제작)</span> <span>단꿈교육/유지보수(+신규 페이지 제작 및 패밀리사이트 제작)</span> <span>테고사이언스/유지보수</span>
+                      <span>일상건강/유지보수(+신규 페이지 제작)</span> <span>서울드라마어워즈/유지보수</span> <span>파마리서치/유지보수</span> <span>파마리서치바이오/유지보수</span>
+                      <span>3·1 문화재단/유지보수</span> <span>유니월드/유지보수</span>
+                      <br /><br />
+                      <span>GT LINK/제작</span> <span>바이오인프라/제작</span> <span>엔알랩/제작</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="btn_more">😘<span>more</span>😍</button>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="section section05">
+          <div class="inner">
+            <ul class="contact_ul">
+              <li>
+                <h3 class="tit">
+                  Please <span>contact</span> me<br />
+                  if you are interested
+                </h3>
+                <ul class="contact_info_ul">
+                  <li>
+                    <h4>phone</h4>
+                    <p><a href="sms:01024908315">010.2490.8315</a></p>
+                  </li>
+                  <li>
+                    <h4>e-mail</h4>
+                    <p>
+                      <a href="mailto:69123a8721@gamil.com">69123a8721@gamil.com</a><br />
+                      <a href="mailto:69123a@naver.com">69123a@naver.com</a>
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <img src="./img/me_contact.png" alt="contact memoticon">
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="inner">
+        <p class="copyright">Design by Heeji-Nam © All Right Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
