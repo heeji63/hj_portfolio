@@ -96,6 +96,7 @@ main > .inner{padding: 0 50px;}
 .section.section04 .work_wrap .work_others .work_others_ul li .tit{margin-top: 40px;line-height: normal;text-align: left;}
 .section.section04 .work_wrap .work_others .work_others_ul li p{margin-top:35px;font-size: 24px;color:#666;}
 .section.section04 .work_wrap .work_others .work_others_ul li p span{display: inline-block;}
+.section.section04 .work_wrap .work_others .work_others_ul li p span em{font-weight: 700;}
 .section.section04 .work_wrap .btn_more,
 .section.section04 .work_wrap .btn_close{display:block;margin: 60px auto 0;border:none;background: none;font-family:'century schoolbook', sans-serif;font-size:2.667em;color:#333;}
 .section.section04 .work_wrap .btn_more span,
