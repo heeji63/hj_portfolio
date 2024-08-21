@@ -162,6 +162,24 @@ $(document).ready(function(){
       $(".popupWrap .popup .hj_go").addClass("flex");
     }
   });
+  $(".hj_popup_cont .anchor").click(function(){
+    var popHasClass01 = $(this).parents(".hj_popup_cont").hasClass("hj_hello");
+    var popHasClass02 = $(this).parents(".hj_popup_cont").hasClass("hj_welcom");
+    var popHasClass03 = $(this).parents(".hj_popup_cont").hasClass("hj_go");
+    var s1 = $(".section01").outerHeight();
+    var s2 = $(".section02").outerHeight();
+    var s3 = $(".section03").outerHeight();
+    var s4 = $(".section04").outerHeight();
+    if(popHasClass01 == true){
+      $('html, body').animate({scrollTop: s1}, 500);
+    }else if(popHasClass02 == true){
+      $('html, body').animate({scrollTop: s1+s2}, 500);
+    }else if(popHasClass03 == true){
+      $('html, body').animate({scrollTop: s1+s2+s3+s4}, 500);
+    }
+    $(".popupWrap").fadeOut(200);
+    $(".popupWrap .popup").removeClass("on");
+  });
   $(".popupWrap .popup .popup_close").click(function(){
     $(".popupWrap").fadeOut(200);
     $(".popupWrap .popup").removeClass("on");
