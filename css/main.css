@@ -22,7 +22,8 @@ main > .inner{padding: 0 50px;}
 .section.section02 .about_ul > li:last-child{width:min(640px, 55%);}
 .section.section02 .introduce_ul{display: flex;flex-wrap:wrap;justify-content: space-between;align-content: flex-start;}
 .section.section02 .introduce_ul:not(:first-child){margin-top: 75px;}
-.section.section02 .introduce_ul li:last-child{width: 50%;}
+.section.section02 .introduce_ul li{width: 50%;}
+.section.section02 .introduce_ul:last-child li{width: 100%;}
 .section.section02 .introduce_ul li h4{font-family:'century schoolbook', sans-serif;font-style: italic;font-size: 1.67em;font-weight: 700;transform: translateY(-10px);opacity: 0;}
 .section.section02.on .introduce_ul li h4{transform: translateY(0);opacity: 1;transition: 0.5s ease 0.5s;}
 .section.section02.on .introduce_ul li:nth-child(2) h4{transform: translateY(0);opacity: 1;transition: 0.5s ease 0.9s;}
