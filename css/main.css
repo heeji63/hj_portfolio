@@ -110,6 +110,7 @@ main > .inner{padding: 0 50px;}
 .popupWrap .popup .popup_close{width:40px;height:40px;border:none;background: url("../img/close.png") no-repeat 50% 50%;background-size: 38px;text-indent: -9999px;}
 .popupWrap .popup .hj_popup_cont{height:calc(100% - 80px);display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;position: relative;}
 .popupWrap .popup .hj_popup_cont li:first-child{width: min(340px, calc(40% - 30px));}
+.popupWrap .popup .hj_popup_cont li img{width: 100%;max-width: 300px;}
 .popupWrap .popup .hj_popup_cont li:last-child{width: min(520px, calc(60% - 30px));padding-bottom:60px;}
 .popupWrap .popup .hj_popup_cont li p{font-size: 20px;font-weight: 700;}
 .popupWrap .popup .hj_popup_cont li .anchor{font-family:'century schoolbook', sans-serif;font-size: 40px;font-style: italic;font-weight: 700;position: absolute;right:0;bottom:0;}

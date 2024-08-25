@@ -184,6 +184,12 @@ $(document).ready(function(){
     $(".popupWrap").fadeOut(200);
     $(".popupWrap .popup").removeClass("on");
   });
+  $('.popupWrap').click(function(e){
+    if($(e.target).parents('.popupWrap').length < 1){
+      $(".popupWrap").fadeOut(200);
+      $(".popupWrap .popup").removeClass("on");
+    }
+  }); 
 
   /* work */
   $(".revBtn").click(function(){

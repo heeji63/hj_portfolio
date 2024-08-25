@@ -15,6 +15,7 @@
     .section.section04 .work_wrap .work_others .work_others_ul li p{margin-top:25px;font-size: 20px;}
     .section.section05 .contact_info_ul li h4{font-size: 3em;}
     .section.section05 .contact_info_ul li p{font-size: 1.8em;}
+    .popupWrap .popup{max-width:calc(100% - 100px);height:auto;border-radius: 50px;padding:50px;}
 }
 @media screen and (max-width:1140px){
     #header .gnb .gnb_ul li:not(:first-child){margin-left: 70px;}
@@ -32,6 +33,8 @@
     .section.section05 .contact_info_ul li:not(:first-child){margin-top: 30px;}
     .section.section05 .contact_info_ul li h4{font-size: 2.4em;}
     .section.section05 .contact_info_ul li p{margin-top:10px;font-size: 1.5em;}
+    .popupWrap .popup .hj_popup_cont li:first-child{width: 100%;text-align: center;}
+    .popupWrap .popup .hj_popup_cont li:last-child{width: 100%;margin-top: 50px;padding-bottom:100px;}
     /* work */
     main.work .w_title p{font-size: 25px;}
     main.work .w_title h2{font-size: 80px;}
@@ -92,6 +95,9 @@
     .section.section05.on .contact_info_ul li:nth-child(2) h4{transform: translateY(0);opacity: 1;transition: 0.5s ease 0.7s;}
     .section.section05.on .contact_info_ul li:nth-child(1) p{transform: translateY(0);opacity: 1;transition: 0.5s ease 0.5s;}
     .section.section05.on .contact_info_ul li:nth-child(2) p{transform: translateY(0);opacity: 1;transition: 0.5s ease 0.9s;}
+    .popupWrap .popup{max-width:calc(100% - 60px);height:auto;border-radius: 40px;padding:40px;}
+    .popupWrap .popup .hj_popup_cont li:last-child{padding-bottom: 80px;}
+    .popupWrap .popup .hj_popup_cont li .anchor{font-size: 35px;}
     /* work */
     main.work{margin-top: 100px;}
     main.work .w_title h2{font-size: 45px;}
@@ -132,6 +138,10 @@
     .section.section02 .about_ul > li .introduce_txt{font-size: 1.1em;text-align: left;}
     .section.section04 .work_wrap .work_others .work_others_ul li p{font-size: 15px;}
     footer .copyright{font-size: 1em;}
+    .popupWrap .popup{border-radius:30px;padding:30px}
+    .popupWrap .popup .popup_close{width: 30px;height:30px;background-size: cover;}
+    .popupWrap .popup .hj_popup_cont li:last-child{margin-top:30px}
+    .popupWrap .popup .hj_popup_cont li p{font-size: 18px;}
 }
 @media screen and (max-width:480px){
     #header .inner{width: calc(100% - 20px);padding: 10px 0;}
@@ -143,6 +153,8 @@
     .section.section05 .contact_info_ul{display: block;}
     .section.section05 .contact_info_ul li{width: 100%;}
     .section.section05 .contact_info_ul li:not(:first-child){margin-top: 25px;}
+    .popupWrap .popup{max-width: calc(100% - 20px);}
+    .popupWrap .popup .hj_popup_cont li .anchor{font-size: 30px;}
     /* work */
     main.work{margin-top: 80px;padding-top: 100px;}
     main.work .btn_wrap .revBtn{width:95px;height: 40px;}
