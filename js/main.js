@@ -1,3 +1,20 @@
+
+function _test()
+{
+  var md = new MobileDetect(navigator.userAgent);
+
+  if(md.mobile() || md.phone() || md.tablet())
+  {
+    console.log("mobile");
+    $(".cursor").hide();
+  }
+  else
+  {
+    console.log("pc");
+    $(".cursor").show();
+  }
+}
+
 $(document).ready(function(){
   $("#btn_top").click(function(){
       $('html, body').animate({scrollTop: 0}, 500);
@@ -92,14 +109,15 @@ $(document).ready(function(){
   
     console.log(md);
 
+
 if(md.mobile() || md.phone() || md.tablet()){
-  $(".cursor").hide();
-  $(".cursorShadow").hide();
-  $(".mobileShadow").show();
+  // $(".cursor").hide();
+  // $(".cursorShadow").hide();
+  // $(".mobileShadow").show();
 }else{
- $(".cursor").show();
- $(".cursorShadow").show();
- $(".mobileShadow").hide();
+//  $(".cursor").show();
+//  $(".cursorShadow").show();
+//  $(".mobileShadow").hide();
  var mouseCursor2 = document.querySelector(".cursor");
  var navLinks = document.querySelectorAll("a, button, #header .gnb .gnb_ul li span, .menu_m_box .menu_m_ul li span, .section.section04 .work_wrap .work_list li, .popupWrap .popup .hj_popup_cont li .anchor"); //메뉴 링크
  //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
