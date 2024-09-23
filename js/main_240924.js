@@ -1,23 +1,19 @@
 
 function _test()
 {
-  var md = window.navigator;
-    var _points = md.maxTouchPoints;
+  var md = new MobileDetect(navigator.userAgent);
 
-    // console.log(md.maxTouchPoints);
-
-    if(_points == 0)
-    {
-        console.log("pc");   
-        $(".cursor").show();
-    }
-    else
-    {
-        console.log("mobile tablat");
-        $(".cursor").hide();
-    }
+  if(md.mobile() || md.phone() || md.tablet())
+  {
+    console.log("mobile");
+    $(".cursor").hide();
+  }
+  else
+  {
+    console.log("pc");
+    $(".cursor").show();
+  }
 }
-
 
 $(document).ready(function(){
   $("#btn_top").click(function(){
@@ -54,51 +50,107 @@ $(document).ready(function(){
           $(".work_wrap .work_others .work_others_ul").css("display","none");
       }  
   });
-
+  
   var md = new MobileDetect(navigator.userAgent);
-  // console.log(md);
+  // var device = "PC";
+  // var mobileArr = new Array("iphone", "ipod", "android", "windows ce", "blackberry", "symbian", "windows phone", "webos", "opera mini", "opera mobi", "polaris","iemobile", "lgtelecom", "nokia", "sonyericsson", "samsung");
+  // var tabletArr = new Array("iPad", "tablet", "i.test(window.navigator.userAgent)");
 
-  if(md.mobile() || md.phone() || md.tablet()){
+  //디바이스 체크
+  // for(var txt in mobileArr){
+  //      if(navigator.userAgent.toLowerCase().match(mobileArr[txt]) != null){
+  //      //toLowerCase() 메소드를 통해 userAgent의 텍스트를 소문자로 변환합니다.
+  //         console.log(navigator.userAgent.match(mobileArr[txt]));
+  //         device = "MOBILE"
+  //         break; //쓸데없는 loop를 방지합니다.
+  //      }
+  // }
+
+  // if(device === "MOBILE"){
+  //    $(".cursor").hide();
+  //    $(".cursorShadow").hide();
+  //    $(".mobileShadow").show();
+  // }else{
+  //   $(".cursor").show();
+  //   $(".cursorShadow").show();
+  //   $(".mobileShadow").hide();
+  //   var mouseCursor2 = document.querySelector(".cursor");
+  //   var navLinks = document.querySelectorAll("a, button, #header .gnb .gnb_ul li span, .menu_m_box .menu_m_ul li span, .section.section04 .work_wrap .work_list li, .popupWrap .popup .hj_popup_cont li .anchor"); //메뉴 링크
+  //   //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+  //   window.addEventListener("scroll", cursor2);
+  //   window.addEventListener("mousemove", cursor2);
+  //   //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+  //   function cursor2(e) {
+  //     mouseCursor2.style.left = e.pageX + "px";
+  //     mouseCursor2.style.top = e.pageY - scrollY + "px";
+  //   }
+  //   navLinks.forEach((link) => {
+  //     link.addEventListener("mouseover", () => {
+  //       mouseCursor2.classList.add("link-grow");
+  //     });
+  //     link.addEventListener("mouseleave", () => {
+  //       mouseCursor2.classList.remove("link-grow");
+  //       mouseCursor2.style.zIndex = "9999";
+  //     });
+
+  //     link.addEventListener("mousedown", () => {
+  //       mouseCursor2.classList.add("link-click");
+  //     });
+  //     link.addEventListener("mouseup", () => {
+  //       mouseCursor2.classList.remove("link-click");
+  //       mouseCursor2.style.zIndex = "9999";
+  //     });
+  //     link.addEventListener("mousemove", () => {
+  //       mouseCursor2.classList.remove("link-click");
+  //       mouseCursor2.style.zIndex = "9999";
+  //     });
+  //   });
+  // }
+  
+    console.log(md);
+
+
+if(md.mobile() || md.phone() || md.tablet()){
   // $(".cursor").hide();
   // $(".cursorShadow").hide();
   // $(".mobileShadow").show();
-  }else{
-  // $(".cursor").show();
-  //  $(".cursorShadow").show();
-  //  $(".mobileShadow").hide();
-  var mouseCursor2 = document.querySelector(".cursor");
-  var navLinks = document.querySelectorAll("a, button, #header .gnb .gnb_ul li span, .menu_m_box .menu_m_ul li span, .section.section04 .work_wrap .work_list li, .popupWrap .popup .hj_popup_cont li .anchor"); //메뉴 링크
-  //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
-  window.addEventListener("scroll", cursor2);
-  window.addEventListener("mousemove", cursor2);
-  //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
-  function cursor2(e) {
-    mouseCursor2.style.left = e.pageX + "px";
-    mouseCursor2.style.top = e.pageY - scrollY + "px";
-  }
-  navLinks.forEach((link) => {
-    link.addEventListener("mouseover", () => {
-      mouseCursor2.classList.add("link-grow");
-    });
-    link.addEventListener("mouseleave", () => {
-      mouseCursor2.classList.remove("link-grow");
-      mouseCursor2.style.zIndex = "9999";
-    });
+}else{
+//  $(".cursor").show();
+//  $(".cursorShadow").show();
+//  $(".mobileShadow").hide();
+ var mouseCursor2 = document.querySelector(".cursor");
+ var navLinks = document.querySelectorAll("a, button, #header .gnb .gnb_ul li span, .menu_m_box .menu_m_ul li span, .section.section04 .work_wrap .work_list li, .popupWrap .popup .hj_popup_cont li .anchor"); //메뉴 링크
+ //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+ window.addEventListener("scroll", cursor2);
+ window.addEventListener("mousemove", cursor2);
+ //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+ function cursor2(e) {
+   mouseCursor2.style.left = e.pageX + "px";
+   mouseCursor2.style.top = e.pageY - scrollY + "px";
+ }
+ navLinks.forEach((link) => {
+   link.addEventListener("mouseover", () => {
+     mouseCursor2.classList.add("link-grow");
+   });
+   link.addEventListener("mouseleave", () => {
+     mouseCursor2.classList.remove("link-grow");
+     mouseCursor2.style.zIndex = "9999";
+   });
 
-    link.addEventListener("mousedown", () => {
-      mouseCursor2.classList.add("link-click");
-    });
-    link.addEventListener("mouseup", () => {
-      mouseCursor2.classList.remove("link-click");
-      mouseCursor2.style.zIndex = "9999";
-    });
-    link.addEventListener("mousemove", () => {
-      mouseCursor2.classList.remove("link-click");
-      mouseCursor2.style.zIndex = "9999";
-    });
-  });
-  }
-
+   link.addEventListener("mousedown", () => {
+     mouseCursor2.classList.add("link-click");
+   });
+   link.addEventListener("mouseup", () => {
+     mouseCursor2.classList.remove("link-click");
+     mouseCursor2.style.zIndex = "9999";
+   });
+   link.addEventListener("mousemove", () => {
+     mouseCursor2.classList.remove("link-click");
+     mouseCursor2.style.zIndex = "9999";
+   });
+ });
+}
+  
   $(".menu_m").click(function(){
     if($(this).hasClass("close")){
       $(this).removeClass("close");
